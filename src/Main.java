@@ -15,7 +15,6 @@ public class Main {
         Arrays.stream(popularScores.popScores(array, 5)).forEach(System.out::println);
         System.out.println("++++++++++++++");
 
-
         Employees employees = new Employees();
 
         String s = "(“John”, (“Jasmine”, (“Jay”), (“Unavailable”)), (“Unavailable”, (“Jack”, (“Jeremy”))), (“Johanna”))";

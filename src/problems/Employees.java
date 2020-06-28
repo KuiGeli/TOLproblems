@@ -10,9 +10,10 @@ public class Employees {
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(employees);
+        String unavailable = ", (“Unavailable”";
 
-        while (stringBuilder.indexOf("(“Unavailable”") != -1) {
-            int startingIndex = stringBuilder.indexOf(", (“Unavailable”");
+        while (stringBuilder.indexOf(unavailable) != -1) {
+            int startingIndex = stringBuilder.indexOf(unavailable);
             int charIndex = startingIndex + 13;
             int openParenthesis = 1;
             int closingParenthesis = 0;
