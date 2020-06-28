@@ -2,11 +2,14 @@ package problems;
 
 public class Employees {
 
+    /*
+    the removeUnavailable method deletes the employees marked unavailable and their subordinates by counting the opening
+    and closing parentheses;
+     */
     public String removeUnavailable(String employees) {
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(employees);
-
 
         while (stringBuilder.indexOf("(“Unavailable”") != -1) {
             int startingIndex = stringBuilder.indexOf(", (“Unavailable”");
